@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    <div class="wrapper">
+
+      
+        <header>
+            <input id="input-box" type="text" autocomplete="off" class="search-box" placeholder="Wyszukaj miasto...">
+            <div class="error">Nie znaleziono miasta</div>
+        </header>
+        <main>
+
+            <section class="location">
+                <div class="city"></div>
+                <div class="date"></div>
+            </section>
+
+            <div class="current-weather">
+                
+                <div class="temperature"><span></span></div>
+                <div class="weather-icon" src=""></div>
+                <div class="weather"></div>
+                <div class="inf">Prędkość wiatru</div>
+                <div class="wind" id="information-holder"></div>
+                <div class="inf">Ciśnienie</div>
+                <div class="pressure"  id="information-holder"></div>
+                <div class="inf">Wilgotność</div>
+                <div class="humidity"  id="information-holder"></div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

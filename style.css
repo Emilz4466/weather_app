@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding: 0;
+   
+}
+
+body{
+    background-image: url("images/background.jpg");
+    
+    font-family:"Century Gothic", CenturyGothic, Geneva AppleGothic, sans-serif;;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    color: rgb(180, 174, 163);
+   
+}
+.start-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 400px auto;
+    
+}
+
+
+
+.start-icon img{
+    max-width: 200px;
+    width: 100%;
+    transform: scale(0.5);
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.start-icon img:hover{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.wrapper{
+    max-width: 450px;
+    width: 100%;
+    min-height: 60vh;
+    background: linear-gradient(0deg, rgba(144,36,129,0.5) 44%, rgba(64,43,133,0.5) 76%);
+    margin:120px auto;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 15px 15px;
+
+}
+
+header input{
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 16px 0px 16px 0px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color:black;
+    font-size:20px;
+    transition: 0.2s ease-out;
+}
+
+header input:focus{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.error{
+    color: rgb(255, 0, 0);
+    margin-top:5px;
+    font-weight: 600;
+    display:none;
+}
+
+main{
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.inf{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.location .city{
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.location .date{
+    font-size: 22px;
+}
+
+.current-weather .temperature{
+    font-size: 50px;
+}
+
+.current-weather .weather{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+#information-holder{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
